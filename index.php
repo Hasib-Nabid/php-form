@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Portal</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
             min-height: 100vh;
@@ -15,11 +15,25 @@
             padding: 0;
             background-color: #f8f9fa;
         }
-        .card {
+        .main-content {
             margin-top: 50px;
-            max-width: 600px;
+            max-width: 900px;
             width: 100%;
-            border-radius: 0.5rem;
+        }
+        .main-content .card {
+            border-radius: 8px; /* Changed from 0.5rem */
+        }
+        .grid-item-content {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px; /* Changed from 0.5rem */
+            padding: 24px; /* Changed from 1.5rem */
+            margin-bottom: 16px; /* Changed from 1rem */
+            text-align: center;
+        }
+        .grid-item-content h5 {
+            color: #0d6efd;
+            margin-bottom: 12px; /* Changed from 0.75rem */
         }
     </style>
 </head>
@@ -36,7 +50,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                      <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link" href="#">Courses</a>
                     </li>
 
@@ -51,14 +65,41 @@
         </div>
     </nav>
 
-    <div class="card">
-        <div class="card-header bg-success text-white">
-            <h1>Welcome to the Student Portal</h1>
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h1>Welcome to the Student Portal</h1>
+                    </div>
+                    <div class="card-body">
+                        <p class="lead">Use the options below to efficiently manage student information and academic records.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-            <p class="lead">Use the options below to efficiently manage student information and academic records.</p>
-            <a href="registration.php" class="btn btn-primary btn-lg">Register New Student</a>
-            <a href="info.php" class="btn btn-primary btn-lg">View Student Information</a>
+        <div class="row mt-3">
+            <div class="col-4 d-flex flex-column">
+                <div class="grid-item-content flex-grow-1">
+                    <h5>New to our university?</h5>
+                    <p>Start your academic journey by creating a new student account and enrolling in your first courses.</p>
+                </div>
+                <a href="registration.php" class="btn btn-primary btn-lg w-100 mt-auto">Register New Student</a>
+            </div>
+            <div class="col-4 d-flex flex-column">
+                <div class="grid-item-content flex-grow-1">
+                    <h5>Already a student?</h5>
+                    <p>Access your personal details, academic transcripts, and enrollment history.</p>
+                </div>
+                <a href="info.php" class="btn btn-primary btn-lg w-100 mt-auto">View Student Information</a>
+            </div>
+            <div class="col-4 d-flex flex-column">
+                <div class="grid-item-content flex-grow-1">
+                    <h5>Explore our programs!</h5>
+                    <p>Browse our comprehensive catalog of courses and find the perfect fit for your studies.</p>
+                </div>
+                <a href="#" class="btn btn-primary btn-lg w-100 mt-auto">View Courses</a>
+            </div>
         </div>
     </div>
     
