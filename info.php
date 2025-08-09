@@ -7,7 +7,6 @@ $dbname = "db";
 
 $conn = mysqli_connect($host, $user, $pass, $dbname);
 
-
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
@@ -16,8 +15,8 @@ $sql = "SELECT id, name, email, age, department, phone FROM reg";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
-    echo "<table>";
-    echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>Age</th><th>Actions</th></tr>";
+    echo "<table border='1'>";
+    echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>Age</th><th>Department</th><th>Phone</th><th>Actions</th></tr>";
     
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
@@ -35,5 +34,7 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     echo "No records found.";
 }
+
 mysqli_close($conn);
+
 ?>
