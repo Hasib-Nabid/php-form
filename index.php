@@ -21,19 +21,19 @@
             width: 100%;
         }
         .main-content .card {
-            border-radius: 8px; /* Changed from 0.5rem */
+            border-radius: 8px;
         }
         .grid-item-content {
             background-color: #ffffff;
             border: 1px solid #dee2e6;
-            border-radius: 8px; /* Changed from 0.5rem */
-            padding: 24px; /* Changed from 1.5rem */
-            margin-bottom: 16px; /* Changed from 1rem */
+            border-radius: 8px; 
+            padding: 24px; 
+            margin-bottom: 16px; 
             text-align: center;
         }
         .grid-item-content h5 {
             color: #0d6efd;
-            margin-bottom: 12px; /* Changed from 0.75rem */
+            margin-bottom: 12px; 
         }
     </style>
 </head>
@@ -105,3 +105,4 @@
     
 </body>
 </html>
+
