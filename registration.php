@@ -18,7 +18,6 @@
      background-color: #fff;
      padding: 30px;
      border-radius: 10px;
-     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
      width: 100%;
      max-width: 400px;
    }
@@ -56,7 +55,6 @@
      width: 100%;
      font-size: 16px;
      cursor: pointer;
-     transition: background-color 0.3s ease;
    }
 
    input[type="submit"]:hover {
