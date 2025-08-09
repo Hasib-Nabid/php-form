@@ -58,6 +58,7 @@
         <div class="card-body">
             <p class="lead">Use the options below to efficiently manage student information and academic records.</p>
             <a href="registration.php" class="btn btn-primary btn-lg">Register New Student</a>
+            <a href="info.php" class="btn btn-primary btn-lg">View Student Information</a>
         </div>
     </div>
     
